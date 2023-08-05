@@ -59,20 +59,20 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .btn {
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  border: solid 1px magenta;
+  border: solid 1px $purple-400;
   border-radius: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   &:focus {
-    outline: solid 2px magenta;
+    outline: solid 2px $purple-400;
     outline-offset: 1px;
   }
 
@@ -168,13 +168,14 @@ export default {
   }
 }
 
-.btn--outlined.btn--purple {
-  background-color: $gray-100;
-  border-color: $purple-400;
+.btn--text.btn--purple {
+  background-color: transparent;
+  border-color: transparent;
   color: $purple-400;
   
   &:hover {
     background-color: $purple-100;
+    border-color: $purple-100;
   }
 
   &:active {
@@ -192,13 +193,14 @@ export default {
   }
 }
 
-.btn--outlined.btn--green {
-  background-color: $gray-100;
-  border-color: $green-400;
+.btn--text.btn--green {
+  background-color: transparent;
+  border-color: transparent;
   color: $green-400;
   
   &:hover {
     background-color: $green-100;
+    border-color: $green-100;
   }
 
   &:active {
@@ -216,13 +218,14 @@ export default {
   }
 }
 
-.btn--outlined.btn--blue {
-  background-color: $gray-100;
-  border-color: $blue-400;
+.btn--text.btn--blue {
+  background-color: transparent;
+  border-color: transparent;
   color: $blue-400;
   
   &:hover {
     background-color: $blue-100;
+    border-color: $blue-100;
   }
 
   &:active {

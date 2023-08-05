@@ -1,6 +1,6 @@
 const ButtonVariant = Object.freeze({
   SOLID: 'solid',
-  OUTLINED: 'outlined',
+  TEXT: 'text',
 });
 
 const ButtonSize = Object.freeze({
@@ -17,7 +17,7 @@ const ButtonColor = Object.freeze({
 
 const ButtonVariants = [
   ButtonVariant.SOLID,
-  ButtonVariant.OUTLINED,
+  ButtonVariant.TEXT,
 ];
 
 const ButtonSizes = [

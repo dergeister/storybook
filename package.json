@@ -11,25 +11,25 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@vuelidate/core": "^2.0.2",
-    "@vuelidate/validators": "^2.0.2",
     "sass": "^1.62.1",
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.12",
-    "@storybook/addon-interactions": "^7.0.12",
-    "@storybook/addon-links": "^7.0.12",
-    "@storybook/blocks": "^7.0.12",
-    "@storybook/testing-library": "^0.0.14-next.2",
-    "@storybook/vue3": "^7.0.12",
-    "@storybook/vue3-vite": "^7.0.12",
+    "@storybook/addon-essentials": "^7.2.1",
+    "@storybook/addon-interactions": "^7.2.1",
+    "@storybook/addon-links": "^7.2.1",
+    "@storybook/blocks": "^7.2.1",
+    "@storybook/manager-api": "^7.2.1",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/theming": "^7.2.1",
+    "@storybook/vue3": "^7.2.1",
+    "@storybook/vue3-vite": "^7.2.1",
     "@vitejs/plugin-vue": "^4.1.0",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass-loader": "^13.2.2",
-    "storybook": "^7.0.12",
+    "storybook": "^7.2.1",
     "vite": "^4.3.2"
   }
 }

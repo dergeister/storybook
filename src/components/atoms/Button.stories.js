@@ -9,19 +9,19 @@ import {
 } from '../../utils/Button'
 
 export default {
-  title: 'Workshop/Button',
+  title: 'Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {
     variant: {
       control: {
-        type: 'select',
+        type: 'radio',
       },
       options: ButtonVariants,
     },
     size: {
       control: {
-        type: 'select',
+        type: 'radio',
       },
       options: ButtonSizes,
     },
@@ -67,34 +67,34 @@ export const SolidBlue = {
   },
 }
 
-export const OutlinedPurple = {
+export const TextPurple = {
   args: {
-    variant: ButtonVariant.OUTLINED,
+    variant: ButtonVariant.TEXT,
     size: ButtonSize.REGULAR,
     color: ButtonColor.PURPLE,
-    label: 'Outlined Purple',
+    label: 'Text Purple',
     disabled: false,
     fullWidth: false,
   },
 }
 
-export const OutlinedGreen = {
+export const TextGreen = {
   args: {
-    variant: ButtonVariant.OUTLINED,
+    variant: ButtonVariant.TEXT,
     size: ButtonSize.REGULAR,
     color: ButtonColor.GREEN,
-    label: 'Outlined Purple',
+    label: 'Text Purple',
     disabled: false,
     fullWidth: false,
   },
 }
 
-export const OutlinedBlue = {
+export const TextBlue = {
   args: {
-    variant: ButtonVariant.OUTLINED,
+    variant: ButtonVariant.TEXT,
     size: ButtonSize.REGULAR,
     color: ButtonColor.BLUE,
-    label: 'Outlined Purple',
+    label: 'Text Purple',
     disabled: false,
     fullWidth: false,
   },
