@@ -66,9 +66,43 @@ export const Complete = {
   }
 }
 
+export const Pay = {
+  args: {
+    variant: NavbarVariant.COMPLETE,
+    logo: {
+      variant: 'primary',
+      to: 'https://dietbox.me'
+    },
+    navLinks: [
+      {
+        label: 'Planos e Preços',
+        to: 'https://pay.dietbox.me'
+      },
+      {
+        label: 'Dietbox Academy',
+        to: 'https://academy.dietbox.me/',
+        active: true
+      },
+      {
+        label: 'Blog',
+        to: 'https://blog.dietbox.me/'
+      }
+    ],
+    navActions: [
+      {
+        label: 'Experimente Grátis',
+        to: 'https://blog.dietbox.me/',
+        variant: ButtonVariant.SOLID,
+        color: ButtonColor.PURPLE,
+        size: ButtonSize.SMALL,
+      },
+    ]
+  }
+}
+
 export const NoActions = {
   args: {
-    variant: NavbarVariant.NO_ACTIONS,
+    variant: NavbarVariant.COMPLETE,
     logo: {
       variant: 'primary',
       to: 'https://dietbox.me'

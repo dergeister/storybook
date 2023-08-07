@@ -1,12 +1,10 @@
 const NavbarVariant = Object.freeze({
-  COMPLETE: 'primary',
-  NO_ACTIONS: 'secondary',
-  SIMPLIFIED: 'dark',
+  COMPLETE: 'complete',
+  SIMPLIFIED: 'simplified',
 });
 
 const NavbarVariants = [
   NavbarVariant.COMPLETE,
-  NavbarVariant.NO_ACTIONS,
   NavbarVariant.SIMPLIFIED,
 ];
 

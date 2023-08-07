@@ -3,7 +3,10 @@
   <a class="navbar__logo" :href="logo.to">
     <Logo :variant="logo.variant" />
   </a>
-  <div class="navbar__links">
+  <div 
+    v-if="isComplete"
+    class="navbar__links"
+  >
     <NavLink 
       v-for="link in navLinks"
       :label="link.label"
@@ -11,10 +14,7 @@
       :active="link.active"
     />
   </div>
-  <div 
-    v-if="showActions"
-    class="navbar__actions"
-  >
+  <div v-if="isComplete" class="navbar__actions">
     <Button
       v-for="action in navActions"
       :label="action.label"
@@ -64,8 +64,8 @@ export default {
         'navbar--simplified': this.variant == NavbarVariant.SIMPLIFIED
       }
     },
-    showActions() {
-      return this.variant != NavbarVariant.SIMPLIFIED;
+    isComplete() {
+      return this.variant == NavbarVariant.COMPLETE;
     }
   },
 }
